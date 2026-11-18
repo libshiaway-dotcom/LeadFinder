@@ -1,3 +1,4 @@
+
 name = "leadfinder"
 main = "worker/index.ts"
 compatibility_date = "2025-01-15"
@@ -6,12 +7,12 @@ compatibility_flags = ["nodejs_compat"]
 [assets]
 directory = "./dist"
 binding = "ASSETS"
-run_worker_first = ["/api/*"]
+run_worker_first = true
 
 [[d1_databases]]
 binding = "DB"
 database_name = "leadfinder-db"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "ВСТАВИМ_ID_ТВОЕЙ_БАЗЫ"
 migrations_dir = "migrations"
 
 [vars]
