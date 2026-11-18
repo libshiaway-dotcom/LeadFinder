@@ -1,0 +1,21 @@
+name = "leadfinder"
+main = "worker/index.ts"
+compatibility_date = "2025-01-15"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "leadfinder-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+[vars]
+APP_NAME = "LeadFinder"
+NOMINATIM_URL = "https://nominatim.openstreetmap.org"
+OVERPASS_URL = "https://overpass-api.de/api/interpreter"
+APP_CONTACT = "mailto:replace-with-your-contact@example.com"
